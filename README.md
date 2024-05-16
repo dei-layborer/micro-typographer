@@ -6,10 +6,10 @@ Current status: Proof of concept
 All that's implemented so far is smart quotes (‘’), and they're hard-coded.
 
 ## To Do
--[ ] Store replacements in a table
+- [ ] Store replacements in a table
 
--[ ] Implement config file for replacements
+- [ ] Implement config file for replacements
 
--[ ] Make replacements compatible with built-in ``autoclose`` plugin
+- [ ] Make replacements compatible with built-in ``autoclose`` plugin
 
--[ ] Implement whole-word replacements (rather than just single runes)
+- [ ] Implement whole-word replacements (rather than just single runes)
