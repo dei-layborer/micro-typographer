@@ -1,0 +1,15 @@
+[{
+    "Name": "typographer",
+    "Description": "A plugin for adding additional text formatting and replacements",
+    "Tags": ["text", "text formatting", "text replacements"],
+    "Website": "https://github.com/dei-layborer/micro-typographer",
+    "Versions": [
+        {
+            "Version": "0.0.1",
+            "Url": "",
+            "Require": {
+                "micro": ">=2.0.0-1"
+            }
+        }
+    ]
+}]
