@@ -50,7 +50,6 @@ function replaceRune(bp, enteredRune, replacementRune)
 
     -- check to see how many replacement possibilities there are
     if charAt(replacementRune, 3) == "" then       -- two
-        micro.InfoBar():Message("replacing")
         local leftChar = charAt(replacementRune, 1)
         local rightChar = charAt(replacementRune, 2)
         
@@ -63,6 +62,9 @@ function replaceRune(bp, enteredRune, replacementRune)
         else
             bp.Buf:Insert(-bp.Cursor.Loc, rightChar)
         end
+    elseif charAt(replacementRune, 2) == "" then    -- one
+        bp:Backspace()
+        bp.Buf:Insert(-bp.Cursor.Loc, replacementRune)
     end
 
     -- re-enable autoclose if needed
